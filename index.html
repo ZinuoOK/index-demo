@@ -6,11 +6,13 @@
     </head>
     <body>
         <script>
-            const CONFIG = "123";
-            {
-                const CONFIG = "234";
-                console.log(CONFIG);
-            }
+            "use strict";
+            // console.log(window.screenLeft);
+            const CONFIG = {
+                "Post": 443
+            };
+            Object.freeze(CONFIG);
+            CONFIG.Post = 80;
             console.log(CONFIG);
         </script>
     </body>
