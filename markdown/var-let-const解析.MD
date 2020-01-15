@@ -8,5 +8,8 @@
 
 - 变量冻结
 
-    使用object.freeze()进行变量冻结，防止const声明的引用类型被意外修改。
-在严格模式下`use strict`会产生一个提示: *Uncaught TypeError: Cannot assign to read only property 'Post' of object '#<Object>'*
+    使用`object.freeze()`进行变量冻结，防止const声明的引用类型被意外修改。在严格模式下`use strict`会产生一个提示: *Uncaught TypeError: Cannot assign to read only property 'Post' of object '#<Object>'*
+
+- 传值与传址
+    基本对象传值。
+    引用对象传址。
