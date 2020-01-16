@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Index-Html</title>
-    </head>
-    <body>
-        <script>
-            "use strict";
-            // console.log(window.screenLeft);
-            const CONFIG = {
-                "Post": 443
-            };
-            Object.freeze(CONFIG);
-            CONFIG.Post = 80;
-            console.log(CONFIG);
-        </script>
-    </body>
-
+  <head>
+    <meta charset="utf-8" />
+    <title>Index-Html</title>
+  </head>
+  <body>
+    <input type="text" name="age" />
+    <script>
+      "use strict";
+      document
+        .querySelector('[name="age"]')
+        .addEventListener("keyup", function() {
+          console.log("3");
+        });
+    </script>
+  </body>
 </html>
